@@ -1,0 +1,18 @@
+apiVersion: servicecatalog.k8s.io/v1alpha1
+kind: Instance
+metadata:
+  name: demo-redis
+  namespace: default
+spec:
+  serviceClassName: azure-rediscache
+  planName: basic
+  parameters:
+    resourceGroup: demo
+    cacheName: demo-redis # must be globally unique
+    parameters:
+      location: southcentralus
+      enableNonSslPort: true
+      sku:
+        name: Basic
+        family: C
+        capacity: 0

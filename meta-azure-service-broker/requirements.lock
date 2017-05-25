@@ -1,0 +1,10 @@
+dependencies:
+- condition: ""
+  enabled: false
+  import-values: null
+  name: sql-server
+  repository: file://../sql-server/
+  tags: null
+  version: 0.1.0
+digest: sha256:aa41b6359516f8c422725c27776cfd4a1d66fde805e6beb3b706c8e419635d5a
+generated: 2017-05-23T17:01:06.333170069-06:00
